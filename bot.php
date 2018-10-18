@@ -1,8 +1,8 @@
 <?php
 require_once('./line_class.php');
 require_once('./unirest-php-master/src/Unirest.php');
-$channelAccessToken = '7y341zDol9PRxZTBQbUBH+G/hMz2HU/ddJY6TP1ym61Onnws3oOoHTUYn7tFz8BvWYbuYRS0GLb9cuv+IXgqrX2Si9N00U4G3k1XaocU324vr8jlzOJdpDBxzIidKLZUTPnLjqix60PALljIQhqKggdB04t89/1O/w1cDnyilFU='; //sesuaikan 
-$channelSecret = '773ac39b8de82b0cdc49237ddcc42dda';//sesuaikan
+$channelAccessToken = 'wTQ3kK0s99YwWx5vLHOIawrc1tBsrUJMxt6jm14hm36qBnJ56ZYF4nrbPp5aWnx7ADpwtJnPlVsgQjnaT / KKIjMWrsQKp3zaPT2tzBenl5iyOjmkwZ3ScgduYcaK050AL2LULjNW4IiUg9AIHu / DHQdB04t89 / 1O / w1cDnyilFU ='; //sesuaikan 
+$channelSecret = '5611f67df898e4678fb11e9809d70a74';//sesuaikan
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 $userId     = $client->parseEvents()[0]['source']['userId'];
 $groupId    = $client->parseEvents()[0]['source']['groupId'];
@@ -281,7 +281,7 @@ function qibla($keyword) {
 }
 //show menu, saat join dan command,menu
 if ($command == 'Help') {
-    $text .= "「Keyword RpdBot~」\n\n";
+    $text .= "「Keyword Bot~」\n\n";
     $text .= "- Help\n";
     $text .= "- /jam \n";
     $text .= "- /quotes \n";
@@ -669,7 +669,7 @@ if($message['type']=='text') {
             'messages' => array( 
                 array ( 
                         'type' => 'template', 
-                          'altText' => 'About Creator RpdBot', 
+                          'altText' => 'About Creator Bot', 
                           'template' =>  
                           array ( 
                             'type' => 'buttons', 
@@ -677,15 +677,15 @@ if($message['type']=='text') {
                             'imageAspectRatio' => 'rectangle', 
                             'imageSize' => 'cover', 
                             'imageBackgroundColor' => '#FFFFFF', 
-                            'title' => 'Muhammad Raihan Permadi', 
-                            'text' => 'Creator RpdBot', 
+                            'title' => 'Boy_Bot', 
+                            'text' => 'Creator Bot', 
                             'actions' =>  
                             array ( 
                               0 =>  
                               array ( 
                                 'type' => 'uri', 
                                 'label' => 'Contact', 
-                                'uri' => 'https://line.me/ti/p/~rhnprmd', 
+                                'uri' => 'https://line.me/R/ti/p/~limbizkids', 
                               ), 
                             ), 
                           ), 
