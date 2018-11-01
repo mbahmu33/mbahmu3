@@ -24,7 +24,7 @@ if (count($pesan_datang) > 2) {
 }
 #-------------------------[Function Open]-------------------------#
 function tv($keyword) {
-    $uri = "https://rest.farzain.com/api/acaratv.php?id=" . $keyword . "&apikey=fDh6y7ZwXJ24eiArhGEJ55HgA";
+    $uri = "https://rest.farzain.com/api/acaratv.php?id=" . $keyword . "&apikey=6jgO0tFNdAGIDcV7UEn3dUfT7";
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $result = "「Jadwal AcaraTV」";
@@ -53,12 +53,12 @@ function qr($keyword) {
     $response = Unirest\Request::get("$uri"); 
  
     $json = json_decode($response->raw_body, true); 
-    $result .= "https://rest.farzain.com/api/qrcode.php?id=" . $keyword . "&apikey=fDh6y7ZwXJ24eiArhGEJ55HgA";
+    $result .= "https://rest.farzain.com/api/qrcode.php?id=" . $keyword . "&apikey=6jgO0tFNdAGIDcV7UEn3dUfT7";
     return $result; 
 }
 #-------------------------[Close]-------------------------#
 function ahli($keyword) {
-    $uri = "https://rest.farzain.com/api/ahli.php?name=" . $keyword . "&apikey=fDh6y7ZwXJ24eiArhGEJ55HgA";
+    $uri = "https://rest.farzain.com/api/ahli.php?name=" . $keyword . "&apikey=6jgO0tFNdAGIDcV7UEn3dUfT7";
   
     $response = Unirest\Request::get("$uri");
   
@@ -76,7 +76,7 @@ function neon($keyword) {
     $response = Unirest\Request::get("$uri"); 
  
     $json = json_decode($response->raw_body, true); 
-    $result .= "https://rest.farzain.com/api/photofunia/neon_sign.php?text=" . $keyword . "&apikey=fDh6y7ZwXJ24eiArhGEJ55HgA";
+    $result .= "https://rest.farzain.com/api/photofunia/neon_sign.php?text=" . $keyword . "&apikey=6jgO0tFNdAGIDcV7UEn3dUfT7";
     return $result; 
 }
 #-------------------------[Close]-------------------------#
@@ -86,13 +86,13 @@ function light($keyword) {
  
     $response = Unirest\Request::get("$uri"); 
     $json = json_decode($response->raw_body, true); 
-    $result .= " https://rest.farzain.com/api/photofunia/light_graffiti.php?text=" . $keyword . "&apikey=fDh6y7ZwXJ24eiArhGEJ55HgA";
+    $result .= " https://rest.farzain.com/api/photofunia/light_graffiti.php?text=" . $keyword . "&apikey=6jgO0tFNdAGIDcV7UEn3dUfT7";
     return $result; 
 }
 #-------------------------[Close]-------------------------#
 #-------------------------[Open]-------------------------#
 function quotes($keyword) {
-    $uri = "https://rest.farzain.com/api/motivation.php?apikey=fDh6y7ZwXJ24eiArhGEJ55HgA";
+    $uri = "https://rest.farzain.com/api/motivation.php?apikey=6jgO0tFNdAGIDcV7UEn3dUfT7";
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $result = "「Quotes」";
@@ -106,7 +106,7 @@ function quotes($keyword) {
 }
 #-------------------------[Close]-------------------------#
 function arti($keyword) {
-    $uri = "https://rest.farzain.com/api/nama.php?q=" . $keyword . "&apikey=fDh6y7ZwXJ24eiArhGEJ55HgA";
+    $uri = "https://rest.farzain.com/api/nama.php?q=" . $keyword . "&apikey=6jgO0tFNdAGIDcV7UEn3dUfT7";
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $result = "「Arti Nama」";
@@ -253,7 +253,7 @@ function shalat($keyword) {
 }
 #-------------------------[Close]-------------------------#
 function instagram($keyword) {
-    $uri = "https://rest.farzain.com/api/ig_profile.php?id=" . $keyword . "&apikey=fDh6y7ZwXJ24eiArhGEJ55HgA";
+    $uri = "https://rest.farzain.com/api/ig_profile.php?id=" . $keyword . "&apikey=6jgO0tFNdAGIDcV7UEn3dUfT7";
   
     $response = Unirest\Request::get("$uri");
   
